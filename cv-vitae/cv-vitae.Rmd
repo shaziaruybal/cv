@@ -44,7 +44,7 @@ tools <- read_csv(here("data", "digital_tools.csv"))
 
 ```{r eval=FALSE, include=FALSE}
 # To update CV on my website, run the following code in the console:
-rmarkdown::render("cv-vitae/cv-vitae.Rmd", output_file = "~/Documents/SR/website-apero/static/files/cv-vitae.pdf")
+# rmarkdown::render("cv-vitae/cv-vitae.Rmd", output_file = "~/Documents/SR/website-apero/static/files/cv-vitae.pdf")
 ```
 
 # Current Appointments
