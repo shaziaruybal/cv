@@ -1,0 +1,249 @@
+---
+name: Shazia Ruybal Pesántez
+qualifications: PhD
+position: "Postdoctoral Scientist"
+address: "Melbourne, Australia"
+# profilepic: "./img/headshot_2020.png"
+www: shaziaruybal.com
+email: "ruybal.s@wehi.edu.au"
+twitter: DrShaziaRuybal
+github: shaziaruybal
+orcid: "0000-0002-0495-179X"
+googlescholar: "E7dY4foAAAAJ"
+aboutme: "Genomic epidemiologist with expertise in population genetics, bioinformatics, and epidemiology. I'm interested in combining these approaches to population-based studies of infectious diseases, particularly malaria, and more recently COVID-19. My work has involved international collaborations in West Africa, Asia-Pacific and the Americas, and spans applied epidemiology and capacity-building in the field, to genetics and genomics in the lab, to the downstream analytics using advanced approaches and digital tools. I am an avid `R` user for data processing, visualization, communication, reports/dashboards, shiny web applications and am passionate about open science and the development of digital tools for research."
+headcolor: 414141
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+    keep_tex: true
+always_allow_html: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+library(tidyverse)
+library(here)
+library(vitae)
+library(kableExtra)
+```
+
+```{r load data, include=FALSE}
+appointments <- read_csv(here("data", "appointments.csv"))
+education <- read_csv(here("data", "education.csv"))
+research <- read_csv(here("data", "research_experience.csv"))
+teaching <- read_csv(here("data", "teaching_supervision.csv"))
+awards <- read_csv(here("data", "awards.csv"))
+leadership <- read_csv(here("data", "leadership.csv"))
+presentations <- read_csv(here("data", "presentations.csv"))
+training <- read_csv(here("data", "training.csv"))
+skills <- read_csv(here("data", "skills_table.csv"))
+tools <- read_csv(here("data", "digital_tools.csv"))
+```
+
+```{r eval=FALSE, include=FALSE}
+# To update CV on my website, run the following code in the console:
+rmarkdown::render("cv-vitae/cv-vitae.Rmd", output_file = "~/Documents/SR/website-apero/static/files/cv-vitae.pdf")
+```
+
+# Current Appointments
+```{r}
+appointments %>% 
+  detailed_entries(what = role,
+                   when = glue::glue("{start_date}--{end_date}"),
+                   with = institution,
+                   where = where,
+                   why = details,
+                   .protect = FALSE)
+```
+
+# Education
+```{r}
+education %>% 
+  detailed_entries(what = degree, 
+                   when = year, 
+                   with = institution, 
+                   where = where, 
+                   why = details,
+                   .protect = FALSE)
+```
+
+Research Experience
+====================================================
+```{r}
+research %>%
+  detailed_entries(what = role,
+                   when = dates, #glue::glue("{start_date}--{end_date}"),
+                   with = institution,
+                   where = where,
+                   why = details,
+                   .protect = FALSE)
+```
+
+<!-- \newpage -->
+# Teaching and Supervision
+\footnotesize
+In addition to the formal supervision roles listed below, I am also actively involved in the supervision, mentorship and capacity-building of researcher officers and technical staff in partner institutions in Indonesia, Papua New Guinea and Ecuador. I am also serving on 2 PhD committees at the University of Melbourne. 
+
+\normalsize
+```{r}
+teaching %>%
+  detailed_entries(what = institution,
+                   when = dates, #glue::glue("{start_date}--{end_date}"),
+                   with = role,
+                   where = where,
+                   why = details,
+                   .protect = FALSE)
+```
+
+# Leadership, Service & Community Engagement
+\footnotesize
+*Manuscript peer-review*: Journal of Infectious Diseases (1), PLOS Genetics (1), Malaria Journal (2), International Journal for Parasitology (1), Frontiers in Genetics (1), Infection, Genetics and Evolution (1), Scientific Reports (1)
+\normalsize
+```{r}
+leadership %>%
+  detailed_entries(what = glue::glue("\\textbf{<role>}: <institution> (<where>)",
+                                     .open = "<", .close = ">"),
+                   why = details,
+                   when = dates, #glue::glue("{start_date}--{end_date}"), 
+                   .protect = FALSE)
+
+# leadership <- leadership %>% mutate(details = replace_na(details, " "))
+
+# leadership %>%
+#   brief_entries(what = glue::glue("\\textbf{<role>} \\textit{(<institution>)}. <details>", .open = "<", .close = ">"),
+#                 when = dates, .protect = FALSE)
+```
+
+# Additional training and professional development
+```{r}
+training %>%
+  brief_entries(what = glue::glue("\\textbf{<training>} (<institution>)", .open = "<", .close = ">"),
+                when = year, 
+                .protect = FALSE)
+```
+
+# Skills
+```{r}
+# skills <- read_csv(here("data", "skills.csv"))
+# skills %>%
+#   detailed_entries(with = type,
+#                    why = skill)
+# 
+skills %>%
+  kable(booktabs = TRUE, format = "latex") %>%
+  kable_styling(full_width = F, font_size = 8, latex_options = "hold_position") %>%
+  row_spec(0, bold = T)
+```
+
+\newpage
+# Awards and Funding
+```{r}
+# awards %>% 
+#   detailed_entries(what = institution,
+#                    when = year,
+#                    with = award,
+#                    why = details)
+
+awards %>%
+  brief_entries(glue::glue("\\textbf{<award>} (<institution>): <details>", .open = "<", .close = ">"),
+                paste0(year, "\\newline~\\newline"), .protect = FALSE)
+```
+
+\newpage
+# Publications
+\footnotesize
+```{r}
+# did not like this format so will add manually for now
+# bibliography_entries(here("data", "papers.bib")) 
+```
+*indicates equal contribution
+
+**2021** 
+
+\setlength{\leftskip}{1cm}
+**Ruybal‐Pesántez, S.**, Sáenz, F., Deed, S. L., Johnson, E. K., Larremore, D. B., Vera-Arias, C. A., Tiedje, K. E. & Day, K. P. (2021, *pre-print*). *Clinical malaria incidence following an outbreak in Ecuador was predominantly associated with Plasmodium falciparum with recombinant variant antigen gene repertoires.* medRxiv. https://doi.org/10.1101/2021.04.12.21255093
+
+Feng, Q., Tiedje, K. E., **Ruybal‐Pesántez, S.**, Tonkin‐Hill, G., Duffy, M. F., Day, K. P., Shim, H., & Chan, Y. (2021, *accepted*). *An accurate method for identifying recent recombinants from unaligned sequences.* Bioinformatics.
+
+**Ruybal‐Pesántez, S.**, Tiedje, K. E., Pilosof, S., Tonkin‐Hill, G., He, Q., Rask, T. S., Amenga‐Etego, L., Oduro, A. R., Koram, K. A., Pas‐ cual, M., & Day, K. P. (2021, *accepted*). *Age‐specific patterns of DBLɑ var diversity can explain why residents of high malaria transmission areas remain susceptible to Plasmodium falciparum blood stage infection throughout life.* International Journal for Parasitology.
+
+Charnaud, S., Munro, J., Semenec, L., Mazhari, R., Brewster, J., Bourke, C., **Ruybal‐Pesántez, S.**, James, R., Lautu‐Gumal, D., Karuna‐ jeewa, H., & Mueller, I. (2021, *accepted*). *PacBio long‐read amplicon sequencing for scalable high‐resolution population allele typing of the complex CYP2D6 locus*. Communications Biology.
+
+Mazhari, R., **Ruybal‐Pesántez, S.**, Angrisano, F., Kiernan‐Walker, N., Hyslop, S., Longley, R. J., Bourke, C., Chen, C., Williamson, D. A., Robinson, L. J., Mueller, I., & Eriksson, E. M. (2021). *SARS‐CoV‐2 Multi‐Antigen Serology Assay*. Methods and Protocols, 4(4), 72. https://doi.org/10.3390/mps4040072
+
+Argyropoulos, D. C.* , **Ruybal‐Pesántez, S.*** , Deed, S. L., Oduro, A. R., Dadzie, S. K., Appawu, M. A., Asoala, V., Pascual, M., Koram, K. A., Day, K. P., & Tiedje, K. E. (2021). *The impact of indoor residual spraying on Plasmodium falciparum microsatellite variation in an area of high seasonal malaria transmission in Ghana, West Africa*. Molecular Ecology, 30(16), 3974–3992. https://doi.org/10.1111/mec.16029
+
+\setlength{\leftskip}{2cm}
+  **- This work was chosen by the editors to be featured in the Molecular Ecology blog \href{https://molecularecologyblog.com/2021/09/01/interview-with-the-authors-does-indoor-spraying-alter-the-genetic-diversity-of-malaria-causing-parasites-and-what-does-this-mean-for-long-term-control/}{\faExternalLink}**
+
+\setlength{\leftskip}{1cm}
+Tonkin‐Hill, G., **Ruybal‐Pesántez, S.**, Tiedje, K. E., Rougeron, V., Duffy, M. F., Zakeri, S., Pumpaibool, T., Harnyuttanakorn, P., Branch, O. H., Ruiz‐Mesía, L., Rask, T. S., Prugnolle, F., Papenfuss, A. T., Chan, Y., & Day, K. P. (2021). *Evolutionary analyses of the major vari‐ ant surface antigen‐encoding genes reveal population structure of Plasmodium falciparum within and between continents*. PLOS Genetics, 17(2), e1009269. https://doi.org/10.1371/journal.pgen.1009269
+
+\setlength{\leftskip}{2cm}
+  **- This work was chosen by the editors to be featured with an accompanying Perspectives piece \href{https://doi.org/10.1371/journal.pgen.1009344}{\faExternalLink}**
+
+
+\setlength{\leftskip}{0cm}
+**2020**
+
+\setlength{\leftskip}{1cm}
+Narh, C. A., Ghansah, A., Duffy, M. F., **Ruybal‐Pesántez, S.**, Onwona, C. O., Oduro, A. R., Koram, K. A., Day, K. P.* , & Tiedje, K. E.* (2020). *Evolution of antimalarial drug resistance markers in the reservoir of Plasmodium falciparum infections in the Upper East Region of Ghana*. The Journal of Infectious Diseases. https://doi.org/10.1093/infdis/jiaa286
+
+\setlength{\leftskip}{0cm}
+**2019**
+
+\setlength{\leftskip}{1cm}
+Pilosof, S., He, Q., Tiedje, K. E., **Ruybal‐Pesántez, S.**, Day, K. P., & Pascual, M. (2019). *Competition for hosts modulates vast antigenic diversity to generate persistent strain structure in Plasmodium falciparum.* PLOS Biology, 17(6), e3000336. https://doi.org/10.1371/journal.pbio.3000336
+
+\setlength{\leftskip}{0cm}
+**2018**
+
+\setlength{\leftskip}{1cm}
+He, Q., Pilosof, S., Tiedje, K. E., **Ruybal‐Pesántez, S.**, Artzy‐Randrup, Y., Baskerville, E. B., Day, K. P., & Pascual, M. (2018). *Networks of genetic similarity reveal non‐neutral processes shape strain structure in Plasmodium falciparum*. Nature Communications, 9(1), 1817. https://doi.org/10.1038/s41467-018-04219-3
+
+Rorick, M. M., Artzy‐Randrup, Y., **Ruybal‐Pesántez, S.**, Tiedje, K. E., Rask, T. S., Oduro, A., Ghansah, A., Koram, K., Day, K. P., & Pascual, M. (2018). *Signatures of competition and strain structure within the major blood‐stage antigen of Plasmodium falciparum in a local community in Ghana*. Ecology and Evolution, 8(7), 3574–3588. https://doi.org/10.1002/ece3.3803
+
+\setlength{\leftskip}{0cm}
+**2017**
+
+\setlength{\leftskip}{1cm}
+**Ruybal‐Pesántez, S.**, Tiedje, K. E., Rorick, M. M., Amenga‐Etego, L., Ghansah, A., Oduro, A. R., Koram, K. A., & Day, K. P. (2017). *Lack of Geospatial Population Structure Yet Significant Linkage Disequilibrium in the Reservoir of Plasmodium falciparum in Bongo District, Ghana*. The American Journal of Tropical Medicine and Hygiene, 97(4), 1180–1189. https://doi.org/10.4269/ajtmh.17-0119
+
+**Ruybal‐Pesántez, S.*** , Tiedje, K. E.* , Tonkin‐Hill, G., Rask, T. S., Kamya, M. R., Greenhouse, B., Dorsey, G., Duffy, M. F., & Day, K. P. (2017). *Population genomics of virulence genes of Plasmodium falciparum in clinical isolates from Uganda*. Scientific Reports, 7(1), 11810. https://doi.org/10.1038/s41598-017-11814-9
+
+\setlength{\leftskip}{0cm}
+
+\newpage
+# Digital tools
+\footnotesize
+For other non-traditional academic contributions, I have also developed several `R Shiny` web applications to support COVID-19 surveillance efforts and `R flexdashboard` for real-time updates and data visualization of both programmatic/operational aspects and preliminary epidemiological trends as part of the coordination of population-based field studies. [Check out my GitHub \faExternalLink](https://github.com/shaziaruybal)
+```{r}
+tools %>%
+  detailed_entries(what = authors,
+                   when = year,
+                   with = tool,
+                   why = details,
+                   .protect = FALSE)
+
+# tools %>% 
+#   brief_entries(glue::glue("\\textbf{<tool>}, (Authors: <authors>): <details>", .open = "<", .close = ">"),
+#                 paste0(year, "\\newline~\\newline"), .protect = FALSE)
+```
+
+<!-- \newpage -->
+# Selected presentations
+\footnotesize
+I have participated in oral and poster presentations at 18 conferences (13 international, 5 national; 6 travel awards). 
+```{r}
+presentations <- presentations %>% filter(include == "yes")
+
+presentations %>%
+  brief_entries(glue::glue("\\textbf{<topic>}, <where>", .open = "<", .close = ">"),
+                paste0(year, "\\newline~\\newline"), 
+                .protect = FALSE)
+```
+
+# About me
+I am half Ecuadorian and half American, born in The Netherlands, I am fluent in English and Spanish (beginner French and Dutch), and grew up overseas in several countries in Africa and Latin America: Ecuador, Tanzania, Guatemala, and Honduras. I am an Australian Permanent Resident and have been living in Melbourne, Australia since 2014 when I moved to pursue my PhD. Apart from my research, I am highly committed to furthering health and development initiatives, particularly in my home country of Ecuador. From early 2016 until the COVID-19 pandemic, I was CEO and co-founder of the The Artisan Project, a social enterprise that worked hand in hand with talented indigenous artisans in Ecuador. We used fashion as a tool to create income-generating opportunities, particularly for indigenous women, and impulse social impact and innovation. During the COVID-19 pandemic I was actively involved as a consultant epidemiologist providing analyses on case and testing trends, importation dynamics, Reff calculations, among others, to the Ecuadorian National COVID-19 Emergency Response committee - most of this work remains unpublished due to competing political agendas and turnover of public health officials.  

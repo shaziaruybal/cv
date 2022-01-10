@@ -1,0 +1,600 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Shazia Ruybal Pesántez}{}
+
+\position{Postdoctoral Scientist}
+\address{Melbourne, Australia}
+
+\email{\href{mailto:ruybal.s@wehi.edu.au}{\nolinkurl{ruybal.s@wehi.edu.au}}}
+\homepage{shaziaruybal.com}
+\orcid{0000-0002-0495-179X}
+\googlescholar{E7dY4foAAAAJ}
+\github{shaziaruybal}
+\twitter{DrShaziaRuybal}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{Genomic epidemiologist with expertise in population genetics,
+bioinformatics, and epidemiology. I'm interested in combining these
+approaches to population-based studies of infectious diseases,
+particularly malaria, and more recently COVID-19. My work has involved
+international collaborations in West Africa, Asia-Pacific and the
+Americas, and spans applied epidemiology and capacity-building in the
+field, to genetics and genomics in the lab, to the downstream analytics
+using advanced approaches and digital tools. I am an avid \texttt{R}
+user for data processing, visualization, communication,
+reports/dashboards, shiny web applications and am passionate about open
+science and the development of digital tools for research.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {January 2022}
+    {Shazia Ruybal Pesántez~~~·~~~Curriculum Vitae}
+  {\thepage~ of \pageref{LastPage}~}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{current-appointments}{%
+\section{Current Appointments}\label{current-appointments}}
+
+\begin{cventries}
+    \cventry{Adjunct Associate Professor, Institute of Microbiology, College of Biological and Environmental Sciences}{Universidad San Francisco de Quito}{Quito, Ecuador}{Mar 2020--Present}{}\vspace{-4.0mm}
+    \cventry{Honorary Research Fellow, \href{https://www.burnet.edu.au/working_groups/49_vector_borne_diseases_and_tropical_public_health_group}{Vector-Borne Diseases and Tropical Public Health Group \faExternalLink}}{Burnet Institute}{Melbourne, Australia}{Mar 2019--Present}{}\vspace{-4.0mm}
+    \cventry{Postdoctoral Fellow}{Australian Centre of Research Excellence in Malaria Elimination \href{https://www.acreme.edu.au}{\faExternalLink}}{Melbourne, Australia}{Feb 2019--Present}{}\vspace{-4.0mm}
+    \cventry{Postdoctoral Scientist, \href{https://www.wehi.edu.au/people/ivo-mueller}{Population Health and Immunity Division \faExternalLink}}{Walter and Eliza Hall Institute of Medical Research}{Melbourne, Australia}{Feb 2019--Present}{}\vspace{-4.0mm}
+    \cventry{Honorary Research Fellow, \href{https://www.bio21.unimelb.edu.au/day-group}{Dept of Medical Biology and Bio21 Molecular Science \& Biotechnology Institute \faExternalLink}}{The University of Melbourne}{Melbourne, Australia}{Feb 2019--Present}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{Study Abroad Program (Spring 2011)}{Maastricht University}{Maastricht, Netherlands}{2011}{\begin{cvitems}
+\item Undertook courses in immunology, human physiology and public health policymaking
+\end{cvitems}}
+    \cventry{B.A. Biology}{The Colorado College}{Colorado, USA}{2012}{\begin{cvitems}
+\item Recipient of the Presidential Scholarship (2008-2012) awarded to students with outstanding academic and extracurricular achievement
+\item Recipient of the James Wilkes Memorial Prize in Biology (2011) awarded to the most outstanding undergraduate minority student in Biology
+\item Recipient of the Venture Grant (2012) awarded to students with academic merit to support innovative project proposals
+\end{cvitems}}
+    \cventry{Ph.D. Genetic Epidemiology}{The University of Melbourne}{Melbourne, Australia}{2018}{\begin{cvitems}
+\item Recipient of the Melbourne International Engagement Award and Melbourne International Fee Remission Scholarship (2014-2018) awarded to a limited number of international students based on academic merit to cover full tuition and living costs
+\item \textbf{Thesis}: Genetic epidemiology of the \textit{Plasmodium falciparum} reservoir of infection in Bongo District, Ghana \href{https://hdl.handle.net/11343/216521}{\faExternalLink}
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{research-experience}{%
+\section{Research Experience}\label{research-experience}}
+
+\begin{cventries}
+    \cventry{Visiting Scientist, Institute of Microbiology}{Universidad San Francisco de Quito}{Quito, Ecuador}{Oct 2021--Present}{\begin{cvitems}
+\item Provide support for the coordination and data analysis of a population-based cohort study in Quito to understand vaccine and infection-induced immunity to SARS-CoV-2
+\item Support data analyses on the genomic epidemiology and phylogenetics of different SARS-CoV-2 variants circulating in Ecuador
+\end{cvitems}}
+    \cventry{Postdoctoral Scientist, Population Health and Immunity Division, Mueller and Robinson Labs}{Walter and Eliza Hall Institute of Medical Research}{Melbourne, Australia}{Feb 2019--Present}{\begin{cvitems}
+\item My postdoc work involves the application of a suite of genomic epidemiology approaches to better understand residual and resurgent malaria transmission dynamics in the Asia-Pacific and Americas regions
+\item Support the field implementation and lead the overall analysis of a 12-month longitudinal cohort study in Papua New Guinea. The aim of this study is to understand the spatiotemporal risk factors for malaria infections in 1000 individuals of all ages residing across four villages on the North Coast of PNG.
+\item Apply novel genotyping and molecular diagnostic techniques to samples collected from several large-scale epidemiological field studies in Asia-Pacific to identify and track malaria infections over space and time and within individuals. Downstream analysis involves relating genetic data to epidemiological data to better understand spatiotemporal infection dynamics and risk factors
+\item Outputs: Co-author publications(2), Honors and awards/grants (9), Student/staff supervision (5) PNG
+\end{cvitems}}
+    \cventry{Research Fellow in Malaria Population Genetics, Day Lab}{The University of Melbourne}{Melbourne, Australia}{May 2018--Feb 2019}{\begin{cvitems}
+\item Applied genomic epidemiology approaches that employed bioinformatic and population genetic methods to better understand the diversity and geographic population structure of \textit{var} genes in Ecuador and Ghana
+\item Lead the analysis and preparation of manuscripts on the epidemiology and population genetics of malaria in Ecuador and Ghana
+\item Outputs: Co-author publications (1), Student supervision (1)
+\end{cvitems}}
+    \cventry{Visiting Scientist}{Center for Research on Health in Latin America}{Quito, Ecuador}{Nov 2017--Feb 2018}{\begin{cvitems}
+\item I was awarded a JD Smyth Postgraduate Student Travel Award by the Australian Society for Parasitology to support a Researcher Exchange to establish an international research collaboration
+\item Implemented protocols and novel population genetic analytical methods to examine malaria field samples to better understand malaria transmission patterns in Ecuador
+\item Trained laboratory staff on molecular genetic protocols and developed analytical skills workshops
+\end{cvitems}}
+    \cventry{Postgraduate Researcher, Day Lab}{The University of Melbourne}{Melbourne, Australia}{Feb 2014--May 2018}{\begin{cvitems}
+\item Developed a high-throughput amplicon sequencing genotyping tool and customised computational and analytical methods for characterizing antigenic diversity in \textit{P. falciparum}
+\item My PhD work involved the generation of microsatellite genotyping and \textit{var} gene illumina sequence data and downstream analysis using population genetic, bioinformatic, phylodynamic and epidemiology approaches to relate parasite diversity data to epidemiological data collected in the field
+\item Visited our field site in Bongo District, Ghana in 2014 and was directly involved in the field coordination and data collection as part of a cross-sectional survey in Bongo
+\item Outputs from my PhD: First-author publications (2), Co-author publications (3), Honors and awards (7), Student supervision (1)
+\end{cvitems}}
+    \cventry{Research Assistant, Day Lab, Division of Medical Parasitology}{New York University of School of Medicine}{New York, USA}{Jun 2012--Jan 2014}{\begin{cvitems}
+\item Analyzed the molecular epidemiology and population genetics of the \textit{Plasmodium falciparum var} multi-gene family encoding the major variant surface antigen of malaria
+\end{cvitems}}
+    \cventry{Research Intern, Lustigman Lab, Molecular Parasitology}{New York Blood Center Lindsley F. Kimball Research Institute}{New York, USA}{Jul 2011--Aug 2011}{\begin{cvitems}
+\item Research project: Polymorphisms in invasion ligand genes from Peruvian, Colombian and Brazilian \textit{Plasmodium falciparum} field isolates
+\item Identified novel polymorphisms in DNA sequences coding for proteins critical to the invasion process and pathogenicity of \textit{P. falciparum}
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{teaching-and-supervision}{%
+\section{Teaching and Supervision}\label{teaching-and-supervision}}
+
+\footnotesize
+
+In addition to the formal supervision roles listed below, I am also
+actively involved in the supervision, mentorship and capacity-building
+of researcher officers and technical staff in partner institutions in
+Indonesia, Papua New Guinea and Ecuador. I am also serving on 2 PhD
+committees at the University of Melbourne.
+
+\normalsize
+\begin{cventries}
+    \cventry{Universidad San Francisco de Quito}{Guest Lecturer}{Quito, Ecuador}{Dec 2021}{\begin{cvitems}
+\item Guest lecturer for the Masters of Innovation on COVID-19 epidemiology, variant dynamics and implications for public health in Ecuador
+\end{cvitems}}
+    \cventry{Walter and Eliza Hall Institute of Medical Research}{Honours Student Co-Supervisor}{Melbourne, Australia}{Feb--Dec 2021}{\begin{cvitems}
+\item Designed and co-supervised an Honours research project in seroepidemiology for a Biomedical undergraduate student
+\item Research project: Application of Serological Markers for the Assessment of Spatial Heterogeneity of \textit{Plasmodium vivax} infections in Papua New Guinea
+\end{cvitems}}
+    \cventry{Walter and Eliza Hall Institute of Medical Research}{Undergraduate Student Supervisor}{Melbourne, Australia}{Feb--Dec 2021}{\begin{cvitems}
+\item Designed and supervised a six-month research project in genomics (both lab and analytics) for a Biomedical undergraduate student
+\item Research project: Amplification of six novel markers for \textit{Plasmodium vivax} genotyping by targeted amplicon sequencing
+\end{cvitems}}
+    \cventry{Nossal Institute for Global Health, University of Melbourne}{Guest Lecturer}{Melbourne, Australia}{Oct 2019--Present}{\begin{cvitems}
+\item Guest lecturer for the Nossal Institute for Global Health Masters of Public Health on Malaria and Child Health (POPH90086: Global Child Health)
+\end{cvitems}}
+    \cventry{Walter and Eliza Hall Institute of Medical Research}{PhD Student Co-Supervisor}{Melbourne, Australia}{Jul 2019--Present}{\begin{cvitems}
+\item Co-supervise a Medical Biology PhD student on \textit{Plasmodium vivax} genomics and bioinformatics
+\item Research project: The role of transcription and translational regulation in \textit{Plasmodium vivax} sporozoites
+\end{cvitems}}
+    \cventry{Walter and Eliza Hall Institute of Medical Research}{PhD Student Co-Supervisor}{Melbourne, Australia}{Jul 2019--Jun 2021}{\begin{cvitems}
+\item Co-supervised a PhD student on \textit{Plasmodium vivax} genomics (both lab and analytics) and population genetics
+\item Research project: Development of novel genotyping tools for \textit{Plasmodium vivax}
+\end{cvitems}}
+    \cventry{The University of Melbourne}{MSc Student Co-Supervisor}{Melbourne, Australia}{Feb 2018--Dec 2019}{\begin{cvitems}
+\item Co-supervised a Genetics MSc student in genetic epidemiology, population genetics and statistical genetics
+\item Research project: The effects of seasonality on the population genetics of the reservoir of asymptomatic \textit{Plasmodium falciparum} in Bongo District, Ghana
+\end{cvitems}}
+    \cventry{Universidad de los Hemisferios}{Guest Lecturer}{Quito, Ecuador}{Dec 2017}{\begin{cvitems}
+\item Guest lecturer for the Masters of Entrepreneurship on the topic of Social Impact Business Models and The Artisan Project as a Case Study
+\end{cvitems}}
+    \cventry{The University of Melbourne}{Undergraduate Student Supervisor}{Melbourne, Australia}{Jul 2016--Nov 2016}{\begin{cvitems}
+\item Designed and supervised a six-month research project in statistical genetics and genetic epidemiology for a Computational Biology undergraduate student through the Undergraduate Research Opportunities Program scheme
+\item Research project: Host genetic factors that influence malaria parasitemia in Ghanaian children
+\end{cvitems}}
+    \cventry{The University of Melbourne}{Laboratory Demonstrator}{Melbourne, Australia}{Jul 2015--Aug 2017}{\begin{cvitems}
+\item Led groups of high school students attending the Victorian Certificate of Education Biology workshops in genetics
+\end{cvitems}}
+    \cventry{The Colorado College}{Tutor and Teaching Assistant}{Colorado, USA}{Sep 2008--May 2012}{\begin{cvitems}
+\item Biology Department and Quantitative Reasoning Center, courses included: Introduction to Molecular Genetics, Introduction to Cellular Biology, Advanced Genetics Courses
+\item Spanish Department, courses included: Beginner, Intermediate and Advanced Spanish and Cultural Context and Written Expression
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{leadership-service-community-engagement}{%
+\section{Leadership, Service \& Community
+Engagement}\label{leadership-service-community-engagement}}
+
+\footnotesize
+
+\emph{Manuscript peer-review}: Journal of Infectious Diseases (1), PLOS
+Genetics (1), Malaria Journal (2), International Journal for
+Parasitology (1), Frontiers in Genetics (1), Infection, Genetics and
+Evolution (1), Scientific Reports (1) \normalsize
+
+\begin{cventries}
+    \cventry{\textbf{\href{https://youtu.be/utSVelCdcvU}{TV interview \faExternalLink}}: Visionarias EC News Program (Quito, Ecuador)}{}{}{Dec 2021}{\begin{cvitems}
+\item Interview on a national news program on the segment "Omicron - the new variant affecting the globe" (Ómicron - la nueva variante que esta afectando al mundo)
+\end{cvitems}}
+    \cventry{\textbf{President and Co-organizer}: R-Ladies Melbourne (Melbourne, Australia)}{}{}{Aug 2021--Present}{\begin{cvitems}
+\item R-Ladies Melbourne is a non-profit organization aiming to promote gender diversity in the R statistical programming community
+\end{cvitems}}
+    \cventry{\textbf{Mentor}: CareerTrackers Young Indigenous Women in STEM Academy (Melbourne, Australia)}{}{}{Dec 2020--Present}{}\vspace{-4.0mm}
+    \cventry{\textbf{Member, Postdoctoral Association}: Walter and Eliza Hall Institute (Melbourne, Australia)}{}{}{Dec 2020--Present}{}\vspace{-4.0mm}
+    \cventry{\textbf{Crowdfunding for SARS-CoV-2 serosurveillance in Quito, Ecuador}: Collaboration with Ecuadorian Red Cross (Quito, Ecuador)}{}{}{Sep 2020--Present}{\begin{cvitems}
+\item Led the establishment and provide ongoing support for serosurveillance of SARS-CoV-2 antibodies in blood donors in Ecuador to support COVID-19 epidemiological surveillance. Early in the pandemic, crowdfunding for this initiative raised US\$2,500
+\end{cvitems}}
+    \cventry{\textbf{Consultant Epidemiologist}: National COVID-19 Response Emergency Committee in Ecuador (Quito, Ecuador)}{}{}{Apr--Aug 2020}{}\vspace{-4.0mm}
+    \cventry{\textbf{Guest Curator}: WeAreRLadies Twitter Community (Online)}{}{}{Feb 2020}{}\vspace{-4.0mm}
+    \cventry{\textbf{ICEMR Workshop Co-Organizer}: Walter and Eliza Hall Institute (Melbourne, Australia)}{}{}{Sep--Dec 2019}{\begin{cvitems}
+\item Co-organized an ICEMR-funded hands-on workshop to train six malaria-endemic country scientists on amplicon sequencing (AmpSeq) for \textit{Plasmodium falciparum}, a novel and high-resolution genotyping technique that can be used to sensitively discriminate different clones of \textit{Plasmodium} spp. infections
+\end{cvitems}}
+    \cventry{\textbf{STEM Workshop Co-Leader}: It Takes a Spark Melbourne Conference 2019 (Melbourne, Australia)}{}{}{Sep 2019}{\begin{cvitems}
+\item Co-led the development of a workshop to teach high-school girls epidemiology and R coding skills to solve an outbreak and become a "disease detective". \href{https://github.com/R-LadiesMelbourne/2019-0912-It-takes-a-spark}{(Materials here \faExternalLink)}
+\end{cvitems}}
+    \cventry{\textbf{Discovery Tour Volunteer}: Walter and Eliza Hall Institute (Melbourne, Australia)}{}{}{Jul 2019--Present}{\begin{cvitems}
+\item Volunteer for WEHI Discovery Tours to showcase the malaria research and expose the wider community to medical research
+\end{cvitems}}
+    \cventry{\textbf{Member, Reconciliation Committee}: Walter and Eliza Hall Institute (Melbourne, Australia)}{}{}{Jun 2019--Present}{\begin{cvitems}
+\item The RC aims to contribute towards reconciliation by working towards ‘closing the gap’ in life expectancy, disease incidence, and mortality for Aboriginal and Torres Strait Islander Australians
+\end{cvitems}}
+    \cventry{\textbf{Secretary and Co-organizer}: R-Ladies Melbourne (Melbourne, Australia)}{}{}{Apr--Aug 2021}{\begin{cvitems}
+\item R-Ladies Melbourne is a non-profit organization aiming to promote gender diversity in the R statistical programming community
+\end{cvitems}}
+    \cventry{\textbf{Committee Chair, Annual Conference}: Australian Centre for Excellence in Malaria Elimination (Australia)}{}{}{Mar--Oct 2019}{}\vspace{-4.0mm}
+    \cventry{\textbf{Volunteer, Annual Conference Committee}: Australian Society for Parasitology (Melbourne, Australia)}{}{}{Aug--Sep 2018}{}\vspace{-4.0mm}
+    \cventry{\textbf{Social Impact Entrepreneur}: Melbourne Accelerator Program (Melbourne, Australia)}{}{}{Sep 2016--Feb 2017}{\begin{cvitems}
+\item Selected to represent The Artisan Project (at the time I was CEO) in the MAP Social Velocity six-month competitive entry program for early stage social impact start-ups
+\end{cvitems}}
+    \cventry{\textbf{Entrepreneur}: European Innovation Academy (Nice, France)}{}{}{Jul 2016}{\begin{cvitems}
+\item Selected as one of four students to represent University of Melbourne at EIA, the world's largest extreme accelerator program for tech and digital innovations
+\end{cvitems}}
+    \cventry{\textbf{Campaign Manager}: Ecuadorian Research and Entrepreneurship Network (Melbourne, Australia)}{}{}{Apr 2016}{\begin{cvitems}
+\item As president of EREN at the time, I co-managed a large-scale fundraising campaign across Australia to raise relief funds in response to the 7.8-magnitude earthquake in Ecuador (total amount raised: A\$17,963)
+\end{cvitems}}
+    \cventry{\textbf{Open House Volunteer}: Bio21 Institute (Melbourne, Australia)}{}{}{Jul 2015--Jul 2018}{\begin{cvitems}
+\item Showcased our malaria research to members of the wider community at the Bio21 Open House events
+\end{cvitems}}
+    \cventry{\textbf{Co-Organizer}: ResBaz Ecuador (Quito, Ecuador)}{}{}{Feb 2015--Feb 2016}{\begin{cvitems}
+\item The Research Bazaar is a worldwide festival promoting the digital literacy emerging at the centre of modern research. I was co-organizer of the first ResBaz in the Americas in 2015 and 2016
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{additional-training-and-professional-development}{%
+\section{Additional training and professional
+development}\label{additional-training-and-professional-development}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{Short course: Multiple imputation} (Victorian Centre for Biostatistics)}{}{2021}
+    \cvhonor{}{\textbf{RStudio Diversity Scholar Workshops} (RStudio)}{}{2021}
+    \cvhonor{}{\textbf{Certification "Teaching Skills for Graduate Researchers"} (University of Melbourne)}{}{2018}
+    \cvhonor{}{\textbf{Winter School in Mathematical Biology} (Institute for Molecular Science, The University of Queensland)}{}{2017}
+    \cvhonor{}{\textbf{Short course: Spatial mapping and GIS skills} (University of Melbourne)}{}{2015}
+    \cvhonor{}{\textbf{UOM subject: Epidemiology 1} (University of Melbourne)}{}{2015}
+    \cvhonor{}{\textbf{UOM subject: Biostatistics 1} (University of Melbourne)}{}{2015}
+    \cvhonor{}{\textbf{UOM subject: Linear and Logistic Regression} (University of Melbourne)}{}{2015}
+\end{cvhonors}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+\begin{table}[!h]
+\centering\begingroup\fontsize{8}{10}\selectfont
+
+\begin{tabular}{llll}
+\toprule
+\textbf{Laboratory} & \textbf{Analytical} & \textbf{Programming} & \textbf{Software/Tools}\\
+\midrule
+DNA extraction & Epidemiological database curation/management & R (advanced) & Git/Github\\
+PCR/qPCR & Univariate/multivariate data analysis & Rstudio & REDCap\\
+Illumina amplicon sequencing & Population genetics & RMarkdown & LaTeX\\
+PacBio long-read sequencing & Genome-wide analyses & SLURM/high-performance computing & CSS\\
+Whole-genome sequencing & Reproducible research & STATA & HTML\\
+\bottomrule
+\end{tabular}
+\endgroup{}
+\end{table}
+
+\newpage
+
+\hypertarget{awards-and-funding}{%
+\section{Awards and Funding}\label{awards-and-funding}}
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{Seed Grant (Associate Investigator)} (Australian Centre for Research Excellence in Malaria Elimination): Awarded A\$14,061 as AI for the collaborative project: Methodological comparison of \textit{P. vivax} genotyping approaches for molecular surveillance within the ACREME network}{}{Dec 2021\newline~\newline}
+    \cvhonor{}{\textbf{Research Grant (Associate Investigator)} (Australian Centre for Research Excellence in Malaria Elimination): Awarded A\$100,000 as AI for the collaborative project: Developing a MinION long-read deep amplicon sequencing assay for host variants relevant to 8-aminoquinolines administration}{}{Sep 2021\newline~\newline}
+    \cvhonor{}{\textbf{COVID-19 Digital Grant (Chief Investigator)} (Australian Academy of Science \& Dept of Industry, Science, Energy \& Resources): Awarded A\$10,000 as CI for the collaborative project: Fit-for-purpose analytical tools to support COVID-19 sero-surveillance in Papua New Guinea \href{https://www.science.org.au/news-and-events/news-and-media-releases/regional-research-set-get-digital-boost}{\faExternalLink}}{}{Apr 2021\newline~\newline}
+    \cvhonor{}{\textbf{Professional Development Award} (Walter and Eliza Hall Institute of Medical Research): Awarded to attend the Victorian Centre for Biostatistics Summer School}{}{Jan 2021\newline~\newline}
+    \cvhonor{}{\textbf{RStudio Diversity Scholar} (RStudio): Selected as a Diversity Scholar at the rstudio::global(2021) conference to attend the DS post-conference workshops}{}{Jan 2021\newline~\newline}
+    \cvhonor{}{\textbf{Seed Grant (Associate Investigator)} (Australian Centre for Control \& Elimination of Neglected Tropical Diseases): Awarded a total of A\$100,000 as AI for the collaborative project: Burden of neglected tropical diseases on the north coast of Papua New Guinea}{}{Oct 2020, Jul 2021\newline~\newline}
+    \cvhonor{}{\textbf{Seed Grant (Associate Investigator)} (Australian Centre for Research Excellence in Malaria Elimination): Awarded A\$14,400 as AI for the collaborative project: Validating molecular and serological tools for detecting hidden reservoirs of \textit{Plasmodium} infections in Papua New Guinea}{}{Sep 2020\newline~\newline}
+    \cvhonor{}{\textbf{Kellaway Excellence Award in Education} (Walter and Eliza Hall Institute of Medical Research): Awarded to recognize the significant contribution to improve female representation in statistical bioinformatics through joint leadership of R-Ladies Melbourne, the R programming community for women in Australia}{}{Dec 2019\newline~\newline}
+    \cvhonor{}{\textbf{Seed Grant (Chief Investigator)} (Australian Centre for Research Excellence in Malaria Elimination): Awarded A\$15,000 as CI for the collaborative project: Building capacity for an innovative amplicon deep sequencing tool to genotype \textit{Plasmodium} infections for improved malaria surveillance}{}{Jul 2019\newline~\newline}
+    \cvhonor{}{\textbf{Three Minute Thesis (3MT) Award 1st Place} (The University of Melbourne): Awarded to the best 3MT presentation by a Faculty of Science postgraduate student}{}{Jun 2018\newline~\newline}
+    \cvhonor{}{\textbf{Travel Bursary} (Wellcome Genome Campus): Awarded to present my PhD findings at the International Genomic Epidemiology of Malaria Conference in UK}{}{May 2018\newline~\newline}
+    \cvhonor{}{\textbf{Science Abroad Traveling Scholarship} (The University of Melbourne): Awarded to present my PhD findings at the 2017 international conference of the American Society for Tropical Medicine and Hygiene in USA}{}{Oct 2017\newline~\newline}
+    \cvhonor{}{\textbf{JD Smyth Postgraduate Student Travel Award} (Australian Society for Parasitology): Awarded to undertake a researcher exchange at the Center for Research on Health in Latin America in Ecuador \href{https://www.shaziaruybal.com/files/ASPnewsletterVol29Vol1.pdf}{\faExternalLink}}{}{Sep 2017\newline~\newline}
+    \cvhonor{}{\textbf{Dame Margaret Blackwood Soroptimist Scholarship} (The University of Melbourne): Awarded to an outstanding female student undertaking research in genetics \& who is engaged in the world beyond academia. Recognized as a Dame Margaret Blackwood Scholar  \href{https://science.unimelb.edu.au/study/meet-our-students/profiles/shazia-ruybal-pesantez}{\faExternalLink}}{}{May 2017\newline~\newline}
+    \cvhonor{}{\textbf{European Innovation Academy Travel Scholarship} (The University of Melbourne): Selected as one of four students to represent The University of Melbourne at the EIA and awarded with a travel scholarship to attend the three-week program in Nice, France}{}{Jul 2016\newline~\newline}
+    \cvhonor{}{\textbf{Postgraduate Student Travel Award} (Bio21 Institute of Molecular Science \& Biotechnology): Awarded to present my PhD findings at the 2014 international conference of the American Society for Tropical Medicine and Hygiene in USA}{}{Sep 2014\newline~\newline}
+\end{cvhonors}
+
+\newpage
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\footnotesize
+
+*indicates equal contribution
+
+\textbf{2021}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Ruybal‐Pesántez, S.}, Sáenz, F., Deed, S. L., Johnson, E. K.,
+Larremore, D. B., Vera-Arias, C. A., Tiedje, K. E. \& Day, K. P. (2021,
+\emph{pre-print}). \emph{Clinical malaria incidence following an
+outbreak in Ecuador was predominantly associated with Plasmodium
+falciparum with recombinant variant antigen gene repertoires.} medRxiv.
+\url{https://doi.org/10.1101/2021.04.12.21255093}
+
+Feng, Q., Tiedje, K. E., \textbf{Ruybal‐Pesántez, S.}, Tonkin‐Hill, G.,
+Duffy, M. F., Day, K. P., Shim, H., \& Chan, Y. (2021, \emph{accepted}).
+\emph{An accurate method for identifying recent recombinants from
+unaligned sequences.} Bioinformatics.
+
+\textbf{Ruybal‐Pesántez, S.}, Tiedje, K. E., Pilosof, S., Tonkin‐Hill,
+G., He, Q., Rask, T. S., Amenga‐Etego, L., Oduro, A. R., Koram, K. A.,
+Pas‐ cual, M., \& Day, K. P. (2021, \emph{accepted}). \emph{Age‐specific
+patterns of DBLɑ var diversity can explain why residents of high malaria
+transmission areas remain susceptible to Plasmodium falciparum blood
+stage infection throughout life.} International Journal for
+Parasitology.
+
+Charnaud, S., Munro, J., Semenec, L., Mazhari, R., Brewster, J., Bourke,
+C., \textbf{Ruybal‐Pesántez, S.}, James, R., Lautu‐Gumal, D., Karuna‐
+jeewa, H., \& Mueller, I. (2021, \emph{accepted}). \emph{PacBio
+long‐read amplicon sequencing for scalable high‐resolution population
+allele typing of the complex CYP2D6 locus}. Communications Biology.
+
+Mazhari, R., \textbf{Ruybal‐Pesántez, S.}, Angrisano, F.,
+Kiernan‐Walker, N., Hyslop, S., Longley, R. J., Bourke, C., Chen, C.,
+Williamson, D. A., Robinson, L. J., Mueller, I., \& Eriksson, E. M.
+(2021). \emph{SARS‐CoV‐2 Multi‐Antigen Serology Assay}. Methods and
+Protocols, 4(4), 72. \url{https://doi.org/10.3390/mps4040072}
+
+Argyropoulos, D. C.* , \textbf{Ruybal‐Pesántez, S.}* , Deed, S. L.,
+Oduro, A. R., Dadzie, S. K., Appawu, M. A., Asoala, V., Pascual, M.,
+Koram, K. A., Day, K. P., \& Tiedje, K. E. (2021). \emph{The impact of
+indoor residual spraying on Plasmodium falciparum microsatellite
+variation in an area of high seasonal malaria transmission in Ghana,
+West Africa}. Molecular Ecology, 30(16), 3974--3992.
+\url{https://doi.org/10.1111/mec.16029}
+
+\setlength{\leftskip}{2cm}
+
+\textbf{- This work was chosen by the editors to be featured in the
+Molecular Ecology blog
+\href{https://molecularecologyblog.com/2021/09/01/interview-with-the-authors-does-indoor-spraying-alter-the-genetic-diversity-of-malaria-causing-parasites-and-what-does-this-mean-for-long-term-control/}{\faExternalLink}}
+
+\setlength{\leftskip}{1cm}
+
+Tonkin‐Hill, G., \textbf{Ruybal‐Pesántez, S.}, Tiedje, K. E., Rougeron,
+V., Duffy, M. F., Zakeri, S., Pumpaibool, T., Harnyuttanakorn, P.,
+Branch, O. H., Ruiz‐Mesía, L., Rask, T. S., Prugnolle, F., Papenfuss, A.
+T., Chan, Y., \& Day, K. P. (2021). \emph{Evolutionary analyses of the
+major vari‐ ant surface antigen‐encoding genes reveal population
+structure of Plasmodium falciparum within and between continents}. PLOS
+Genetics, 17(2), e1009269.
+\url{https://doi.org/10.1371/journal.pgen.1009269}
+
+\setlength{\leftskip}{2cm}
+
+\textbf{- This work was chosen by the editors to be featured with an
+accompanying Perspectives piece
+\href{https://doi.org/10.1371/journal.pgen.1009344}{\faExternalLink}}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2020}
+
+\setlength{\leftskip}{1cm}
+
+Narh, C. A., Ghansah, A., Duffy, M. F., \textbf{Ruybal‐Pesántez, S.},
+Onwona, C. O., Oduro, A. R., Koram, K. A., Day, K. P.* , \& Tiedje, K.
+E.* (2020). \emph{Evolution of antimalarial drug resistance markers in
+the reservoir of Plasmodium falciparum infections in the Upper East
+Region of Ghana}. The Journal of Infectious Diseases.
+\url{https://doi.org/10.1093/infdis/jiaa286}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2019}
+
+\setlength{\leftskip}{1cm}
+
+Pilosof, S., He, Q., Tiedje, K. E., \textbf{Ruybal‐Pesántez, S.}, Day,
+K. P., \& Pascual, M. (2019). \emph{Competition for hosts modulates vast
+antigenic diversity to generate persistent strain structure in
+Plasmodium falciparum.} PLOS Biology, 17(6), e3000336.
+\url{https://doi.org/10.1371/journal.pbio.3000336}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2018}
+
+\setlength{\leftskip}{1cm}
+
+He, Q., Pilosof, S., Tiedje, K. E., \textbf{Ruybal‐Pesántez, S.},
+Artzy‐Randrup, Y., Baskerville, E. B., Day, K. P., \& Pascual, M.
+(2018). \emph{Networks of genetic similarity reveal non‐neutral
+processes shape strain structure in Plasmodium falciparum}. Nature
+Communications, 9(1), 1817.
+\url{https://doi.org/10.1038/s41467-018-04219-3}
+
+Rorick, M. M., Artzy‐Randrup, Y., \textbf{Ruybal‐Pesántez, S.}, Tiedje,
+K. E., Rask, T. S., Oduro, A., Ghansah, A., Koram, K., Day, K. P., \&
+Pascual, M. (2018). \emph{Signatures of competition and strain structure
+within the major blood‐stage antigen of Plasmodium falciparum in a local
+community in Ghana}. Ecology and Evolution, 8(7), 3574--3588.
+\url{https://doi.org/10.1002/ece3.3803}
+
+\setlength{\leftskip}{0cm}
+
+\textbf{2017}
+
+\setlength{\leftskip}{1cm}
+
+\textbf{Ruybal‐Pesántez, S.}, Tiedje, K. E., Rorick, M. M.,
+Amenga‐Etego, L., Ghansah, A., Oduro, A. R., Koram, K. A., \& Day, K. P.
+(2017). \emph{Lack of Geospatial Population Structure Yet Significant
+Linkage Disequilibrium in the Reservoir of Plasmodium falciparum in
+Bongo District, Ghana}. The American Journal of Tropical Medicine and
+Hygiene, 97(4), 1180--1189. \url{https://doi.org/10.4269/ajtmh.17-0119}
+
+\textbf{Ruybal‐Pesántez, S.}* , Tiedje, K. E.* , Tonkin‐Hill, G., Rask,
+T. S., Kamya, M. R., Greenhouse, B., Dorsey, G., Duffy, M. F., \& Day,
+K. P. (2017). \emph{Population genomics of virulence genes of Plasmodium
+falciparum in clinical isolates from Uganda}. Scientific Reports, 7(1),
+11810. \url{https://doi.org/10.1038/s41598-017-11814-9}
+
+\setlength{\leftskip}{0cm}
+
+\newpage
+
+\hypertarget{digital-tools}{%
+\section{Digital tools}\label{digital-tools}}
+
+\footnotesize
+
+For other non-traditional academic contributions, I have also developed
+several \texttt{R\ Shiny} web applications to support COVID-19
+surveillance efforts and \texttt{R\ flexdashboard} for real-time updates
+and data visualization of both programmatic/operational aspects and
+preliminary epidemiological trends as part of the coordination of
+population-based field studies.
+\href{https://github.com/shaziaruybal}{Check out my GitHub
+\faExternalLink}
+
+\begin{cventries}
+    \cventry{Shazia Ruybal-Pesántez}{\href{https://shaziaruybal.shinyapps.io/covidClassifyR}{CovidClassifyR \faExternalLink}}{}{Sep 2021}{\begin{cvitems}
+\item This Shiny web application was developed to support COVID-19 serosurveillance in Papua New Guinea enabling classification of unknown samples as recently exposed to SARS-CoV-2. This tool makes the downstream processing, quality control and interpretation of the raw data generated from a validated COVID-19 serological assay \href{https://doi.org/10.3390/mps4040072}{(Mazhari et al 2020)} accessible to all researchers without the need for a specialist background in statistical methods and advanced programming. Funding was provided by a COVID-19 Digital Grant, \href{https://www.science.org.au/news-and-events/news-and-media-releases/regional-research-set-get-digital-boost}{media release \faExternalLink}
+\end{cvitems}}
+    \cventry{Raúl Fernández, Shazia Ruybal-Pesántez, Esteban Ortíz}{\href{https://covid19analytics.shinyapps.io/VaccinationScore/}{COVID-19 VaccinationScore \faExternalLink}}{}{Feb 2021}{\begin{cvitems}
+\item This Shiny web application was developed during the initial vaccine roll-out in Ecuador to help individuals better understand their "priority status" to receive their COVID-19 vaccine. An algorithm was applied to calculate a priority score based on an individuals answers to a set of questions on socioeconomic status, occupation, exposure, risk behavior, comorbidities, etc. \href{https://www.elcomercio.com/actualidad/herramienta-recibir-vacuna-covid19-ecuador.html}{Newspaper article (in Spanish) \faExternalLink}
+\end{cvitems}}
+    \cventry{Shazia Ruybal-Pesántez}{Serosurveillance of COVID-19 in Ecuadorian blood donors dashboard (not open-source)}{}{Jun 2020}{\begin{cvitems}
+\item This R flexdashboard was developed to support COVID-19 serosurveillance in Ecuadorian blood donors in collaboration with the Ecuadorian Red Cross National Blood Bank as part of the emergency response to COVID-19 (active early in the pandemic, June 2020-Dec 2020). This dashboard presented anonymized and aggregated data generated from monthly screening of blood donation samples to visualize seroprevalence trends. Due to confidentiality and internal permissions at ERC this tool is not publicly available.
+\end{cvitems}}
+    \cventry{Shazia Ruybal-Pesántez}{ICEMR weekly dashboard (not open-source)}{}{Mar 2020}{\begin{cvitems}
+\item This R flexdashboard was developed to support the ICEMR field teams in Madang, Papua New Guinea (active during the entire longitudinal cohort study March 2020 until Sep 2021). This dashboard was updated weekly and presented operational data (e.g. follow-up rates in each field site) that could be used by the team to plan field activies and identify any areas for improvement as well as preliminary epidemiological trends (e.g. RDT positivity, prevalence of fever). As this tool was meant for internal use within the ICEMR project, it is not publicly available.
+\end{cvitems}}
+    \cventry{Shazia Ruybal-Pesántez}{processqpcR}{}{In development}{\begin{cvitems}
+\item This Shiny web application is in development to support laboratory researchers with little to no programming skills with a tool for downstream processing of raw data generated from several qPCR machines (e.g. Lightcyler480, Quantstudio, etc). Functions will include automatic matching of sample IDs using a user-supplied 96-well or 384-well plate map, quantification of unknown samples using the assay standard curve/positive controls (e.g. to detect malaria-positive samples) and some preliminary visualizations of the data.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{selected-presentations}{%
+\section{Selected presentations}\label{selected-presentations}}
+
+\footnotesize
+
+I have participated in oral and poster presentations at 18 conferences
+(13 international, 5 national; 6 travel awards).
+
+\begin{cvhonors}
+    \cvhonor{}{\textbf{Understanding the factors underlying malaria resurgence in East Sepik, Papua New Guinea: a preliminary analysis}, Invited to speak at the Australian Centre for Excellence in Malaria Elimination webinar series. \href{https://www.acreme.edu.au/understanding-the-factors-underlying-malaria-resurgence-in-east-sepik-papua-new-guinea-a-preliminary-analysis/}{See recording \faExternalLink}}{}{2021\newline~\newline}
+    \cvhonor{}{\textbf{rstudio::global(2021) \%>\% filter(workshops == “diversity scholars”) \%>\% summarize()}, Presented at the R-Ladies Melbourne meet-up, \href{https://shaziaruybal.github.io/rstudioglobal2021-divscholar-recap/}{slides \faExternalLink}}{}{2021\newline~\newline}
+    \cvhonor{}{\textbf{Why are adults still infected in malaria-endemic areas? Insights from the epidemiology of \textit{P. falciparum var} genes}, Oral presentation at the annual meeting of the American Society of Tropical Medicine and Hygiene, New Orleans, USA}{}{2018\newline~\newline}
+    \cvhonor{}{\textbf{Maintenance of the parasite reservoir in Ghana: parasite diversity and the epidemiology of \textit{P. falciparum var} genes}, Invited to speak at the London School of Hygiene and Tropical Medicine Malaria Centre seminar series in London, UK}{}{2018\newline~\newline}
+    \cvhonor{}{\textbf{Why is it difficult to control malaria? (¿Por qué es dificil controlar la malaria?)}, Invited to speak at the University of San Francisco of Quito (USFQ) Faculty of Biological and Environmental Sciences seminar series in Quito, Ecuador}{}{2017\newline~\newline}
+    \cvhonor{}{\textbf{\textit{Var} code: a new molecular epidemiology tool for monitoring \textit{Plasmodium falciparum} in a high transmission area of Ghana, West Africa}, Selected to participate in the Young Investigator Award Poster Session of the American Society of Tropical Medicine and Hygiene, Atlanta, USA}{}{2017\newline~\newline}
+\end{cvhonors}
+
+\hypertarget{about-me}{%
+\section{About me}\label{about-me}}
+
+I am half Ecuadorian and half American, born in The Netherlands, I am
+fluent in English and Spanish (beginner French and Dutch), and grew up
+overseas in several countries in Africa and Latin America: Ecuador,
+Tanzania, Guatemala, and Honduras. I am an Australian Permanent Resident
+and have been living in Melbourne, Australia since 2014 when I moved to
+pursue my PhD. Apart from my research, I am highly committed to
+furthering health and development initiatives, particularly in my home
+country of Ecuador. From early 2016 until the COVID-19 pandemic, I was
+CEO and co-founder of the The Artisan Project, a social enterprise that
+worked hand in hand with talented indigenous artisans in Ecuador. We
+used fashion as a tool to create income-generating opportunities,
+particularly for indigenous women, and impulse social impact and
+innovation. During the COVID-19 pandemic I was actively involved as a
+consultant epidemiologist providing analyses on case and testing trends,
+importation dynamics, Reff calculations, among others, to the Ecuadorian
+National COVID-19 Emergency Response committee - most of this work
+remains unpublished due to competing political agendas and turnover of
+public health officials.
+
+
+\label{LastPage}~
+\end{document}
