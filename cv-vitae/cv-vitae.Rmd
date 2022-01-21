@@ -158,14 +158,20 @@ awards %>%
 # did not like this format so will add manually for now
 # bibliography_entries(here("data", "papers.bib")) 
 ```
+
 *indicates equal contribution
 
+\setlength{\leftskip}{0cm}
+**2022**
+
+\setlength{\leftskip}{1cm}
+Feng, Q., Tiedje, K. E., **Ruybal‐Pesántez, S.**, Tonkin‐Hill, G., Duffy, M. F., Day, K. P., Shim, H., & Chan, Y. (2022). *An accurate method for identifying recent recombinants from unaligned sequences.* Bioinformatics. https://doi.org/10.1093/bioinformatics/btac012
+
+\setlength{\leftskip}{0cm}
 **2021** 
 
 \setlength{\leftskip}{1cm}
 **Ruybal‐Pesántez, S.**, Sáenz, F., Deed, S. L., Johnson, E. K., Larremore, D. B., Vera-Arias, C. A., Tiedje, K. E. & Day, K. P. (2021, *pre-print*). *Clinical malaria incidence following an outbreak in Ecuador was predominantly associated with Plasmodium falciparum with recombinant variant antigen gene repertoires.* medRxiv. https://doi.org/10.1101/2021.04.12.21255093
-
-Feng, Q., Tiedje, K. E., **Ruybal‐Pesántez, S.**, Tonkin‐Hill, G., Duffy, M. F., Day, K. P., Shim, H., & Chan, Y. (2021, *accepted*). *An accurate method for identifying recent recombinants from unaligned sequences.* Bioinformatics.
 
 **Ruybal‐Pesántez, S.**, Tiedje, K. E., Pilosof, S., Tonkin‐Hill, G., He, Q., Rask, T. S., Amenga‐Etego, L., Oduro, A. R., Koram, K. A., Pas‐ cual, M., & Day, K. P. (2021, *accepted*). *Age‐specific patterns of DBLɑ var diversity can explain why residents of high malaria transmission areas remain susceptible to Plasmodium falciparum blood stage infection throughout life.* International Journal for Parasitology.
 
