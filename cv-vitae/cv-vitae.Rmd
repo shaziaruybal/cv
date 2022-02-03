@@ -29,17 +29,35 @@ library(vitae)
 library(kableExtra)
 ```
 
+```{r functions}
+readExcelSheets <- function(filename){
+  # read all sheets in .xlsx 
+  all <- readxl::excel_sheets(filename)
+  
+  # import each sheet into a list using readxl::read_excel
+  list <- lapply(all, function(x) readxl::read_excel(filename, sheet = x))
+  
+  # save sheet name for each sheet (list)
+  names(list) <- all
+  
+  # breaks up list and creates a dataframe for each sheet with df names matching sheet names
+  list2env(list, envir = .GlobalEnv)
+}
+```
+
 ```{r load data, include=FALSE}
-appointments <- read_csv(here("data", "appointments.csv"))
-education <- read_csv(here("data", "education.csv"))
-research <- read_csv(here("data", "research_experience.csv"))
-teaching <- read_csv(here("data", "teaching_supervision.csv"))
-awards <- read_csv(here("data", "awards.csv"))
-leadership <- read_csv(here("data", "leadership.csv"))
-presentations <- read_csv(here("data", "presentations.csv"))
-training <- read_csv(here("data", "training.csv"))
-skills <- read_csv(here("data", "skills_table.csv"))
-tools <- read_csv(here("data", "digital_tools.csv"))
+# appointments <- read_csv(here("data", "appointments.csv"))
+# education <- read_csv(here("data", "education.csv"))
+# research <- read_csv(here("data", "research_experience.csv"))
+# teaching <- read_csv(here("data", "teaching_supervision.csv"))
+# awards <- read_csv(here("data", "awards.csv"))
+# leadership <- read_csv(here("data", "leadership.csv"))
+# presentations <- read_csv(here("data", "presentations.csv"))
+# training <- read_csv(here("data", "training.csv"))
+# skills <- read_csv(here("data", "skills_table.csv"))
+# tools <- read_csv(here("data", "digital_tools.csv"))
+
+readExcelSheets(here::here("data", "cv_data.xlsx"))
 ```
 
 ```{r eval=FALSE, include=FALSE}
