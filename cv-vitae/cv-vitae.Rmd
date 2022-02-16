@@ -183,6 +183,13 @@ awards %>%
 **2022**
 
 \setlength{\leftskip}{1cm}
+Charnaud, S., Munro, J., Semenec, L., Mazhari, R., Brewster, J., Bourke, C., **Ruybal‐Pesántez, S.**, James, R., Lautu‐Gumal, D., Karuna‐ jeewa, H., & Mueller, I. (2022, *accepted*). *PacBio long‐read amplicon sequencing for scalable high‐resolution population allele typing of the complex CYP2D6 locus*. Communications Biology.
+
+**Ruybal‐Pesántez, S.**, Tiedje, K. E., Pilosof, S., Tonkin‐Hill, G., He, Q., Rask, T. S., Amenga‐Etego, L., Oduro, A. R., Koram, K. A., Pas‐ cual, M., & Day, K. P. (2022). *Age‐specific patterns of DBLα var diversity can explain why residents of high malaria transmission areas remain susceptible to Plasmodium falciparum blood stage infection throughout life.* International Journal for Parasitology. https://doi.org/10.1016/j.ijpara.2021.12.001
+
+\setlength{\leftskip}{2cm}
+  **- This work was featured on the Herminthology #WomenBehindTheWork initiative \href{https://facebook.com/102760015458811/posts/151514423916703/?d=n}{\faExternalLink}**
+  
 Feng, Q., Tiedje, K. E., **Ruybal‐Pesántez, S.**, Tonkin‐Hill, G., Duffy, M. F., Day, K. P., Shim, H., & Chan, Y. (2022). *An accurate method for identifying recent recombinants from unaligned sequences.* Bioinformatics. https://doi.org/10.1093/bioinformatics/btac012
 
 \setlength{\leftskip}{0cm}
@@ -190,10 +197,6 @@ Feng, Q., Tiedje, K. E., **Ruybal‐Pesántez, S.**, Tonkin‐Hill, G., Duffy, M
 
 \setlength{\leftskip}{1cm}
 **Ruybal‐Pesántez, S.**, Sáenz, F., Deed, S. L., Johnson, E. K., Larremore, D. B., Vera-Arias, C. A., Tiedje, K. E. & Day, K. P. (2021, *pre-print*). *Clinical malaria incidence following an outbreak in Ecuador was predominantly associated with Plasmodium falciparum with recombinant variant antigen gene repertoires.* medRxiv. https://doi.org/10.1101/2021.04.12.21255093
-
-**Ruybal‐Pesántez, S.**, Tiedje, K. E., Pilosof, S., Tonkin‐Hill, G., He, Q., Rask, T. S., Amenga‐Etego, L., Oduro, A. R., Koram, K. A., Pas‐ cual, M., & Day, K. P. (2021, *accepted*). *Age‐specific patterns of DBLɑ var diversity can explain why residents of high malaria transmission areas remain susceptible to Plasmodium falciparum blood stage infection throughout life.* International Journal for Parasitology.
-
-Charnaud, S., Munro, J., Semenec, L., Mazhari, R., Brewster, J., Bourke, C., **Ruybal‐Pesántez, S.**, James, R., Lautu‐Gumal, D., Karuna‐ jeewa, H., & Mueller, I. (2021, *accepted*). *PacBio long‐read amplicon sequencing for scalable high‐resolution population allele typing of the complex CYP2D6 locus*. Communications Biology.
 
 Mazhari, R., **Ruybal‐Pesántez, S.**, Angrisano, F., Kiernan‐Walker, N., Hyslop, S., Longley, R. J., Bourke, C., Chen, C., Williamson, D. A., Robinson, L. J., Mueller, I., & Eriksson, E. M. (2021). *SARS‐CoV‐2 Multi‐Antigen Serology Assay*. Methods and Protocols, 4(4), 72. https://doi.org/10.3390/mps4040072
 
@@ -203,7 +206,7 @@ Argyropoulos, D. C.* , **Ruybal‐Pesántez, S.*** , Deed, S. L., Oduro, A. R., 
   **- This work was chosen by the editors to be featured in the Molecular Ecology blog \href{https://molecularecologyblog.com/2021/09/01/interview-with-the-authors-does-indoor-spraying-alter-the-genetic-diversity-of-malaria-causing-parasites-and-what-does-this-mean-for-long-term-control/}{\faExternalLink}**
 
 \setlength{\leftskip}{1cm}
-Tonkin‐Hill, G., **Ruybal‐Pesántez, S.**, Tiedje, K. E., Rougeron, V., Duffy, M. F., Zakeri, S., Pumpaibool, T., Harnyuttanakorn, P., Branch, O. H., Ruiz‐Mesía, L., Rask, T. S., Prugnolle, F., Papenfuss, A. T., Chan, Y., & Day, K. P. (2021). *Evolutionary analyses of the major vari‐ ant surface antigen‐encoding genes reveal population structure of Plasmodium falciparum within and between continents*. PLOS Genetics, 17(2), e1009269. https://doi.org/10.1371/journal.pgen.1009269
+Tonkin‐Hill, G., **Ruybal‐Pesántez, S.**, Tiedje, K. E., Rougeron, V., Duffy, M. F., Zakeri, S., Pumpaibool, T., Harnyuttanakorn, P., Branch, O. H., Ruiz‐Mesía, L., Rask, T. S., Prugnolle, F., Papenfuss, A. T., Chan, Y., & Day, K. P. (2021). *Evolutionary analyses of the major variant surface antigen‐encoding genes reveal population structure of Plasmodium falciparum within and between continents*. PLOS Genetics, 17(2), e1009269. https://doi.org/10.1371/journal.pgen.1009269
 
 \setlength{\leftskip}{2cm}
   **- This work was chosen by the editors to be featured with an accompanying Perspectives piece \href{https://doi.org/10.1371/journal.pgen.1009344}{\faExternalLink}**
