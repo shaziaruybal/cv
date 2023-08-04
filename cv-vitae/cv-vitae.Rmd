@@ -1,11 +1,11 @@
 ---
 name: Shazia Ruybal Pesántez
 qualifications: PhD
-position: "Postdoctoral Scientist"
-address: "Melbourne, Australia"
+# position: "Postdoctoral Scientist"
+# address: "London, UK"
 # profilepic: "./img/headshot_2020.png"
 www: shaziaruybal.com
-email: "ruybal.s@wehi.edu.au"
+email: "s.ruybal@imperial.ac.uk"
 twitter: DrShaziaRuybal
 github: shaziaruybal
 orcid: "0000-0002-0495-179X"
@@ -68,6 +68,7 @@ readExcelSheets(here::here("data", "cv_data.xlsx"))
 # Current Appointments
 ```{r}
 appointments %>% 
+  filter(include == "yes") %>% 
   detailed_entries(what = role,
                    when = glue::glue("{start_date}--{end_date}"),
                    with = institution,
@@ -117,7 +118,7 @@ teaching %>%
 
 # Leadership, Service & Community Engagement
 \footnotesize
-*Manuscript peer-review*: Journal of Infectious Diseases (1), PLOS Genetics (1), Malaria Journal (2), International Journal for Parasitology (1), Frontiers in Genetics (1), Infection, Genetics and Evolution (1), Scientific Reports (1)
+*Manuscript peer-review*: Nature Communications (1), Journal of Infectious Diseases (1), PLOS Genetics (1), Malaria Journal (2), International Journal for Parasitology (1), Frontiers in Genetics (2), Infection, Genetics and Evolution (1), Scientific Reports (2), Annals of Global Health (1)
 \normalsize
 ```{r}
 leadership %>%
@@ -180,12 +181,26 @@ awards %>%
 *indicates equal contribution
 
 \setlength{\leftskip}{0cm}
+**2023**
+
+\setlength{\leftskip}{1cm}
+Tiedje, K. E., Zhan, Q., **Ruybal‐Pesántez, S.**, Tonkin-Hill, G., He, Q., Tan, M.H., Argyropoulos, D. C., Deed, S. L., Ghansah, A., Bangre, O., Oduro, A.R., Koram, K. A., Pascual, M. & Day, K. P.(2023, *pre-print*). *Measuring changes in Plasmodium falciparum census population size in response to sequential malaria control interventions.* medRxiv. https://doi.org/10.1101/2023.05.18.23290210
+
+Eriksson, E.M., Hart, A., Forde, M., Foroughi, S., Kiernan-Walker, N., MAzhari, R., Lucas, E.C., Margetts, M., Farchione, A., Sheerin, D., Ashdown, G., Evans, R., Chen, C., **Ruybal‐Pesántez, S.**, Conway, E., Barrios, M.H., Cornish, J., Edmonds, M., Henneken, L.M., Ioannidis, L.J., Olechnowicz, S.W.Z., Munnings, R.B., Groom, J. R., Hansen, D.S., Bowden, R., Coussens, A.K., Tye-Din, J.A., Bryan, V.L., Mueller, I. (2023, *pre-print*). *Cohort Profile: A longitudinal Victorian COVID-19 cohort (COVID PROFILE).* medRxiv. https://doi.org/10.1101/2023.04.27.23289157
+
+**Ruybal‐Pesántez, S.**, Sáenz, F.S., Deed, S. L., Johnson, E. K., Larremore, D. B., Vera-Arias, C. A., Tiedje, K. E., Day, K. P. (2023). *Molecular epidemiology of continued Plasmodium falciparum disease transmission after an outbreak in Ecuador* Frontiers in Tropical Diseases. https://doi.org/10.3389/fitd.2023.1085862
+
+Mazhari, R., Takashima, E., Longley, R.J., **Ruybal‐Pesántez, S.**, White, M. T., Kanoi, B. N., Nagaoka, H., Kiniboro, B., Siba, P., Tsuboi, T., Mueller, I. (2023). *Identification of novel Plasmodium vivax proteins associated with protection against clinical malaria* Frontiers in Cellular and Infection Microbiology (Biology and Pathogenicity of Non-falciparum Malaria - Vol II Research Topic). https://doi.org/10.3389/fcimb.2023.1076150
+
+\setlength{\leftskip}{0cm}
 **2022**
 
 \setlength{\leftskip}{1cm}
-Charnaud, S., Munro, J., Semenec, L., Mazhari, R., Brewster, J., Bourke, C., **Ruybal‐Pesántez, S.**, James, R., Lautu‐Gumal, D., Karuna‐ jeewa, H., & Mueller, I. (2022, *accepted*). *PacBio long‐read amplicon sequencing for scalable high‐resolution population allele typing of the complex CYP2D6 locus*. Communications Biology.
+Tiedje, K. E., Oduro, A. R., Bangre O., Amenga‐Etego, L., Dadzie, S. K., Appawu, M. A., Frempong, K., Asoala, V., **Ruybal‐Pesántez, S.**, Narh, C. A., Deed, S. L., Argyropoulos, D. C., Ghansah, A., Agyei, S. A., Segbaya, S., Desewu, K., Williams, I., Simpson, J. A., Malm, K., Pascual, M., Koram, K. A.,  & Day, K. P. (2022). *Indoor residual spraying with a non-pyrethroid insecticide reduces the reservoir of Plasmodium falciparum in a high-transmission area in northern Ghana* PLOS Global Public Health. https://doi.org/10.1371/journal.pgph.0000285 
 
-**Ruybal‐Pesántez, S.**, Tiedje, K. E., Pilosof, S., Tonkin‐Hill, G., He, Q., Rask, T. S., Amenga‐Etego, L., Oduro, A. R., Koram, K. A., Pas‐ cual, M., & Day, K. P. (2022). *Age‐specific patterns of DBLα var diversity can explain why residents of high malaria transmission areas remain susceptible to Plasmodium falciparum blood stage infection throughout life.* International Journal for Parasitology. https://doi.org/10.1016/j.ijpara.2021.12.001
+Charnaud, S., Munro, J., Semenec, L., Mazhari, R., Brewster, J., Bourke, C., **Ruybal‐Pesántez, S.**, James, R., Lautu‐Gumal, D., Karunajeewa, H., & Mueller, I. (2022). *PacBio long‐read amplicon sequencing for scalable high‐resolution population allele typing of the complex CYP2D6 locus*. Communications Biology. https://doi.org/10.1038/s42003-022-03102-8
+
+**Ruybal‐Pesántez, S.**, Tiedje, K. E., Pilosof, S., Tonkin‐Hill, G., He, Q., Rask, T. S., Amenga‐Etego, L., Oduro, A. R., Koram, K. A., Pascual, M., & Day, K. P. (2022). *Age‐specific patterns of DBLα var diversity can explain why residents of high malaria transmission areas remain susceptible to Plasmodium falciparum blood stage infection throughout life.* International Journal for Parasitology. https://doi.org/10.1016/j.ijpara.2021.12.001
 
 \setlength{\leftskip}{2cm}
   **- This work was featured on the Herminthology #WomenBehindTheWork initiative \href{https://facebook.com/102760015458811/posts/151514423916703/?d=n}{\faExternalLink}**
@@ -262,7 +277,7 @@ tools %>%
 <!-- \newpage -->
 # Selected presentations
 \footnotesize
-I have participated in oral and poster presentations at 18 conferences (13 international, 5 national; 6 travel awards). 
+I have participated in oral and poster presentations at >20 conferences (15 international, 5 national; 6 travel awards). 
 ```{r}
 presentations <- presentations %>% filter(include == "yes")
 
@@ -271,6 +286,3 @@ presentations %>%
                 paste0(year, "\\newline~\\newline"), 
                 .protect = FALSE)
 ```
-
-# About me
-I am half Ecuadorian and half American, born in The Netherlands, I am fluent in English and Spanish (beginner French and Dutch), and grew up overseas in several countries in Africa and Latin America: Ecuador, Tanzania, Guatemala, and Honduras. I am an Australian Permanent Resident and have been living in Melbourne, Australia since 2014 when I moved to pursue my PhD. Apart from my research, I am highly committed to furthering health and development initiatives, particularly in my home country of Ecuador. From early 2016 until the COVID-19 pandemic, I was CEO and co-founder of the The Artisan Project, a social enterprise that worked hand in hand with talented indigenous artisans in Ecuador. We used fashion as a tool to create income-generating opportunities, particularly for indigenous women, and impulse social impact and innovation. During the COVID-19 pandemic I was actively involved as a consultant epidemiologist providing analyses on case and testing trends, importation dynamics, Reff calculations, among others, to the Ecuadorian National COVID-19 Emergency Response committee - most of this work remains unpublished due to competing political agendas and turnover of public health officials.  
