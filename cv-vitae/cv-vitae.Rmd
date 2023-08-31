@@ -135,6 +135,7 @@ leadership %>%
 #                 when = dates, .protect = FALSE)
 ```
 
+\newpage
 # Additional training and professional development
 ```{r}
 training %>%
@@ -156,7 +157,7 @@ skills %>%
   row_spec(0, bold = T)
 ```
 
-\newpage
+<!-- \newpage -->
 # Awards and Funding
 ```{r}
 # awards %>% 
@@ -165,12 +166,21 @@ skills %>%
 #                    with = award,
 #                    why = details)
 
+# need to manually slice awards df for now to avoid massive page break
 awards %>%
+  slice(1:11) %>% 
   brief_entries(glue::glue("\\textbf{<award>} (<institution>): <details>", .open = "<", .close = ">"),
                 paste0(year, "\\newline~\\newline"), .protect = FALSE)
 ```
 
 \newpage
+```{r}
+awards %>%
+  slice(12:n()) %>% 
+  brief_entries(glue::glue("\\textbf{<award>} (<institution>): <details>", .open = "<", .close = ">"),
+                paste0(year, "\\newline~\\newline"), .protect = FALSE)
+```
+
 # Publications
 \footnotesize
 ```{r}
@@ -184,19 +194,21 @@ awards %>%
 **2023**
 
 \setlength{\leftskip}{1cm}
+Wei, H., Angrisano, F., Eriksson, E., Mazhari, R., Van, H., Zheng, S., Center, R., Boo, I., McMahon, J., Lau, J., Kiernan-Walker, N., **Ruybal-Pesántez, S.,** Mueller, I., Robinson, L. J., Anderson, D., Drummer, H. (2023). *Serological assays to measure dimeric IgA antibodies in SARS-CoV-2 infections.* Immunology & Cell Biology. http://doi.org/10.1111/imcb.12682 
+
 Tiedje, K. E., Zhan, Q., **Ruybal‐Pesántez, S.**, Tonkin-Hill, G., He, Q., Tan, M.H., Argyropoulos, D. C., Deed, S. L., Ghansah, A., Bangre, O., Oduro, A.R., Koram, K. A., Pascual, M. & Day, K. P.(2023, *pre-print*). *Measuring changes in Plasmodium falciparum census population size in response to sequential malaria control interventions.* medRxiv. https://doi.org/10.1101/2023.05.18.23290210
 
 Eriksson, E.M., Hart, A., Forde, M., Foroughi, S., Kiernan-Walker, N., MAzhari, R., Lucas, E.C., Margetts, M., Farchione, A., Sheerin, D., Ashdown, G., Evans, R., Chen, C., **Ruybal‐Pesántez, S.**, Conway, E., Barrios, M.H., Cornish, J., Edmonds, M., Henneken, L.M., Ioannidis, L.J., Olechnowicz, S.W.Z., Munnings, R.B., Groom, J. R., Hansen, D.S., Bowden, R., Coussens, A.K., Tye-Din, J.A., Bryan, V.L., Mueller, I. (2023, *pre-print*). *Cohort Profile: A longitudinal Victorian COVID-19 cohort (COVID PROFILE).* medRxiv. https://doi.org/10.1101/2023.04.27.23289157
 
-**Ruybal‐Pesántez, S.**, Sáenz, F.S., Deed, S. L., Johnson, E. K., Larremore, D. B., Vera-Arias, C. A., Tiedje, K. E., Day, K. P. (2023). *Molecular epidemiology of continued Plasmodium falciparum disease transmission after an outbreak in Ecuador* Frontiers in Tropical Diseases. https://doi.org/10.3389/fitd.2023.1085862
+**Ruybal‐Pesántez, S.**, Sáenz, F.S., Deed, S. L., Johnson, E. K., Larremore, D. B., Vera-Arias, C. A., Tiedje, K. E., Day, K. P. (2023). *Molecular epidemiology of continued Plasmodium falciparum disease transmission after an outbreak in Ecuador.* Frontiers in Tropical Diseases. https://doi.org/10.3389/fitd.2023.1085862
 
-Mazhari, R., Takashima, E., Longley, R.J., **Ruybal‐Pesántez, S.**, White, M. T., Kanoi, B. N., Nagaoka, H., Kiniboro, B., Siba, P., Tsuboi, T., Mueller, I. (2023). *Identification of novel Plasmodium vivax proteins associated with protection against clinical malaria* Frontiers in Cellular and Infection Microbiology (Biology and Pathogenicity of Non-falciparum Malaria - Vol II Research Topic). https://doi.org/10.3389/fcimb.2023.1076150
+Mazhari, R., Takashima, E., Longley, R.J., **Ruybal‐Pesántez, S.**, White, M. T., Kanoi, B. N., Nagaoka, H., Kiniboro, B., Siba, P., Tsuboi, T., Mueller, I. (2023). *Identification of novel Plasmodium vivax proteins associated with protection against clinical malaria.* Frontiers in Cellular and Infection Microbiology (Biology and Pathogenicity of Non-falciparum Malaria - Vol II Research Topic). https://doi.org/10.3389/fcimb.2023.1076150
 
 \setlength{\leftskip}{0cm}
 **2022**
 
 \setlength{\leftskip}{1cm}
-Tiedje, K. E., Oduro, A. R., Bangre O., Amenga‐Etego, L., Dadzie, S. K., Appawu, M. A., Frempong, K., Asoala, V., **Ruybal‐Pesántez, S.**, Narh, C. A., Deed, S. L., Argyropoulos, D. C., Ghansah, A., Agyei, S. A., Segbaya, S., Desewu, K., Williams, I., Simpson, J. A., Malm, K., Pascual, M., Koram, K. A.,  & Day, K. P. (2022). *Indoor residual spraying with a non-pyrethroid insecticide reduces the reservoir of Plasmodium falciparum in a high-transmission area in northern Ghana* PLOS Global Public Health. https://doi.org/10.1371/journal.pgph.0000285 
+Tiedje, K. E., Oduro, A. R., Bangre O., Amenga‐Etego, L., Dadzie, S. K., Appawu, M. A., Frempong, K., Asoala, V., **Ruybal‐Pesántez, S.**, Narh, C. A., Deed, S. L., Argyropoulos, D. C., Ghansah, A., Agyei, S. A., Segbaya, S., Desewu, K., Williams, I., Simpson, J. A., Malm, K., Pascual, M., Koram, K. A.,  & Day, K. P. (2022). *Indoor residual spraying with a non-pyrethroid insecticide reduces the reservoir of Plasmodium falciparum in a high-transmission area in northern Ghana.* PLOS Global Public Health. https://doi.org/10.1371/journal.pgph.0000285 
 
 Charnaud, S., Munro, J., Semenec, L., Mazhari, R., Brewster, J., Bourke, C., **Ruybal‐Pesántez, S.**, James, R., Lautu‐Gumal, D., Karunajeewa, H., & Mueller, I. (2022). *PacBio long‐read amplicon sequencing for scalable high‐resolution population allele typing of the complex CYP2D6 locus*. Communications Biology. https://doi.org/10.1038/s42003-022-03102-8
 
@@ -204,7 +216,8 @@ Charnaud, S., Munro, J., Semenec, L., Mazhari, R., Brewster, J., Bourke, C., **R
 
 \setlength{\leftskip}{2cm}
   **- This work was featured on the Herminthology #WomenBehindTheWork initiative \href{https://facebook.com/102760015458811/posts/151514423916703/?d=n}{\faExternalLink}**
-  
+
+\setlength{\leftskip}{1cm}
 Feng, Q., Tiedje, K. E., **Ruybal‐Pesántez, S.**, Tonkin‐Hill, G., Duffy, M. F., Day, K. P., Shim, H., & Chan, Y. (2022). *An accurate method for identifying recent recombinants from unaligned sequences.* Bioinformatics. https://doi.org/10.1093/bioinformatics/btac012
 
 \setlength{\leftskip}{0cm}
@@ -257,7 +270,7 @@ Rorick, M. M., Artzy‐Randrup, Y., **Ruybal‐Pesántez, S.**, Tiedje, K. E., R
 
 \setlength{\leftskip}{0cm}
 
-\newpage
+<!-- \newpage -->
 # Digital tools
 \footnotesize
 For other non-traditional academic contributions, I have also developed several `R Shiny` web applications to support COVID-19 surveillance efforts and `R flexdashboard` for real-time updates and data visualization of both programmatic/operational aspects and preliminary epidemiological trends as part of the coordination of population-based field studies. [Check out my GitHub \faExternalLink](https://github.com/shaziaruybal)
